@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+Разработка сайта — портфолио. От макета до реализации.\
+Работающий сайт [labquickaction.ru](https://labquickaction.ru/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="header" align="center">
+  <h1>Приложение <b>labquickaction.ru</b></h1>
+</div>
+<div align="center">
+  <img src="./src/img/readmy/section1__1440_HEADER.webp" alt="background about me" width="400"/>
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🧱 Функционал приложения :
+- Сайт портфолио - место где можно быстро получить доступ к готовым проектам.
+- Сайт блог - можно создавать посты.
+- Площадка с контактами для быстрой связи со мной.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Стек и Инструменты :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+<img src="./src/img/readmy/html5-plain.svg" style="width: 48px"/>
+<img src="./src/img/readmy/css3-plain.svg" style="width: 48px"/>
+<img src="./src/img/readmy/javascript-plain.svg" style="width: 48px"/>
+<img src="./src/img/readmy/react-original.svg" style="width: 48px"/>
+<img src="./src/img/readmy/figma-original.svg" style="width: 48px"/>
+</div>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Технические решения
+---
+#### React Slider Slck
+[📄 документация](https://react-slick.neostack.com/)
+<div align="center">
+  <img src="./src/img/readmy/section4.webp" alt="background about me" width="400"/>
+</div>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
+#### Разработка в Figma макетов под все разрешения
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<div align="center">
+  <img src="./src/img/readmy/SrctionAll.webp" alt="background screen all size"/>
+</div>
+
+
+---
+#### Разработка в Типографики для страниц блога в Figma
+
+<div align="center">
+  <img src="./src/img/readmy/blogPage.webp" alt="background screen all size"/>
+</div>
+
+
+---
+
+## 📊 Статус и планы по доработке проекта :
+
+### Статус: 
+🟢 Проект находится в стадии активной разработки.
+
+### Планы по доработке проекта :
+⚠️ Создать back-end и админку для возможности создания блога внутри площадки\
+⚠️ Переписать всё на TypeScript
+
+
+---
+# Как запустить запустить приложение Create React.
+
+Этот проект был создан с помощью [Create React App](https://github.com/facebook/create-react-app).
+
+### Доступные скрипты :
+
+В каталоге проекта вы можете запустить:
+
+#### `npm start`
+
+Запускает приложение в режиме разработки.\
+Открыть [http://localhost:3000](http://localhost:3000) чтобы просмотреть его в вашем браузере.
+
+Страница перезагрузится, когда вы внесете изменения.\
+Вы также можете увидеть любые ошибки lint в консоли.
+ 
+#### `npm test`
+
+Запускает программу тестирования в режиме интерактивного просмотра.\
+Смотрите раздел о [«работа с тестами»](https://facebook.github.io/create-react-app/docs/running-tests) для получения дополнительной информации.
+
+#### `npm run build`
+
+Создает приложение для рабочей среды в папке `build`.\
+Оно корректно объединяет React в рабочем режиме и оптимизирует сборку для достижения наилучшей производительности.
+
+Сборка сокращена, а имена файлов содержат хэши.\
+Ваше приложение готово к развертыванию!
+
+Смотрите раздел о [разработке](https://facebook.github.io/create-react-app/docs/deployment) для получения большей информации.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Примечание: это односторонняя операция. Как только вы запустите `eject`, вы не сможете вернуться назад!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Если вас не устраивает инструмент сборки и выбранная конфигурация, вы можете запустить `eject` в любое время. Эта команда удалит единственную зависимость сборки из вашего проекта.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Вместо этого он скопирует все файлы конфигурации и переходные зависимости (webpack, Babel, ESLint и т.д.) прямо в ваш проект, чтобы вы имели полный контроль над ними. Все команды, кроме `eject`, по-прежнему будут работать, но они будут указывать на скопированные скрипты, чтобы вы могли их настроить. На этом этапе вы предоставлены сами себе.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Вам никогда не придется использовать `eject`. Разработанный набор функций подходит для небольших и средних развертываний, и вы не должны чувствовать себя обязанным использовать эту функцию. Однако мы понимаем, что этот инструмент был бы бесполезен, если бы вы не могли настроить его, когда будете к этому готовы.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
