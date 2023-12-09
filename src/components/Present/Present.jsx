@@ -4,7 +4,7 @@ import './Present.css';
 const Present = () => {
   return (
     <section className='present'>
-      <div>
+      <div className='present__container'>
         <h2
           className='present__title'
         >сайт портфолио</h2>
@@ -17,7 +17,11 @@ const Present = () => {
         <p
           className='present__pharagraph present__pharagraph_type_thin'
         >менять профессию никогда не поздно</p>
+        <div
+          className='present__image'>
+        </div>
       </div>
+
     </section>
   );
 }

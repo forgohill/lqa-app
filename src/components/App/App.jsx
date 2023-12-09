@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation, } from 'react-router-dom'
+import { Routes, Route, useLocation, } from 'react-router-dom';
+
 import './App.css';
 
 import Header from '../Header/Header.jsx';
 import Main from '../Main/Main.jsx';
 import BlogPage from '../BlogPage/BlogPage.jsx';
+import PageNotFound from '../PageNotFound/PageNotFound.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
   return (
     <div className="app">
       <Header />
+
+
       <Routes>
         <Route
           path='/'
@@ -28,8 +32,13 @@ function App() {
           path='/blog-page/1'
           element={<BlogPage />}
         />
+        <Route
+          path='*'
+          element={<PageNotFound />}
+        />
       </Routes>
 
+      {/* 
       <Routes>
         <Route
           path='/'
@@ -38,8 +47,8 @@ function App() {
             title='контакты'
           />}
         ></Route>
+      </Routes> */}
 
-      </Routes>
     </div>
   );
 }

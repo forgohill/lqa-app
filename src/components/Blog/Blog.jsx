@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './Blog.css';
 import SectionTitle from '../SectionTitle/SectionTitle.jsx';
-import post__title from '../../img/blog/post__title.jpg'
+import post__title from '../../img/blog/post__title.webp'
 const Blog = ({ subtitle, title }) => {
   return (
     <section
@@ -13,20 +13,12 @@ const Blog = ({ subtitle, title }) => {
         title={title}
       />
 
-      <article
-        className='blog__wrapper'
-      >
-
-        <div
-          className='blog__img-container'
-        >
-          <img
-            className='blog__image'
+      <article className='blog__wrapper'>
+        <div className='blog__img-container'>
+          <img className='blog__image'
             src={post__title} alt="" />
         </div>
-        <div
-          className='blog__content'
-        >
+        <div className='blog__content'>
           <h3 className="blog__title">
             Нашел для себя классный ресурс.
           </h3>

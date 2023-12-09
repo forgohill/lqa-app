@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 import './BlogPage.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
@@ -43,6 +45,9 @@ const BlogPage = () => {
           </li>
         </ul>
       </section>
+      <Helmet>
+        <title>LQA | социальный блог</title>
+      </Helmet>
     </main>
   );
 }

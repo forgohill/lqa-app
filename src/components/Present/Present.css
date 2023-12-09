@@ -1,6 +1,6 @@
 .present {
   margin: 0;
-  padding: 0 121px 0 121px;
+  padding: 0 121px;
   box-sizing: border-box;
 
   width: 100%;
@@ -8,9 +8,19 @@
   display: flex;
   flex-direction: column;
 
+  overflow: hidden;
+}
+
+.present__container {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .present__title {
+  color: var(--backgroung-0d0d0d, #0D0D0D);
   margin: 0;
   margin-top: 30px;
   margin-bottom: 37px;
@@ -24,9 +34,12 @@
   font-weight: 900;
   line-height: 1.52;
   letter-spacing: 11.28px;
+
+  z-index: 10;
 }
 
 .present__pharagraph {
+  color: var(--backgroung-0d0d0d, #0D0D0D);
   margin: 0;
   margin-top: 22px;
   padding: 0;
@@ -40,6 +53,12 @@
   line-height: 1.61;
 
   letter-spacing: 4.32px;
+  z-index: 10;
+}
+
+.present__pharagraph:first-of-type {
+  margin: 0;
+
 }
 
 .present__pharagraph_type_thin {
@@ -50,11 +69,214 @@
 
   color: var(--backgroung-808080, #808080);
 
-  /* 1440/font-helper-1440 */
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.22;
   letter-spacing: 5.6px;
+}
+
+.present__image {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 536px;
+  height: 670px;
+
+
+  background-image: url(../../img/present/head.webp);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  transition: .3s all;
+}
+
+@media screen and (max-width: 1280px) {
+  .present {
+    min-height: 617px;
+    padding: 0 107px;
+  }
+
+  .present__pharagraph {
+    margin-top: 0;
+    width: 560px;
+  }
+
+  .present__pharagraph_type_thin {
+    margin-top: 14px;
+    width: 410px;
+  }
+
+  .present__image {
+    top: -85px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .present {
+    padding: 0 86px;
+    min-height: 1222px;
+  }
+
+  .present__title {
+    margin-top: 75px;
+    margin-bottom: 47px;
+    max-width: 410px;
+    font-size: 58px;
+    line-height: 1.53;
+    letter-spacing: 6.96px;
+  }
+
+  .present__pharagraph {
+    margin-top: 42px;
+    max-width: 410px;
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 3.36px;
+  }
+
+  .present__pharagraph_type_thin {
+    margin-top: 29px;
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 4.48px;
+  }
+
+  .present__image {
+    width: 760px;
+    height: 950px;
+    right: -75px;
+    top: auto;
+    bottom: -614px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .present {
+    padding: 0 70px;
+
+    min-height: 1050px;
+  }
+
+  .present__title {
+    margin-top: 25px;
+    margin-bottom: 39px;
+  }
+
+  .present__pharagraph {
+    margin-top: 46px;
+  }
+
+  .present__pharagraph_type_thin {
+    margin-top: 40px;
+  }
+
+  .present__image {
+    right: -225px;
+    bottom: -540px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .present {
+    min-height: 846px;
+  }
+
+  .present__image {
+    bottom: -324px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .present {
+    padding: 0 32px;
+    min-height: 1120px;
+  }
+
+  .present__container {
+    margin-top: 35px;
+
+    gap: 27px;
+  }
+
+  .present__title,
+  .present__pharagraph {
+    margin: 0;
+    padding: 0;
+  }
+
+  .present__title {
+    width: min-content;
+
+    font-size: 45px;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: 5.4px;
+  }
+
+  .present__pharagraph {
+    width: 355px;
+  }
+
+  .present__pharagraph_type_thin {
+    color: var(--backgroung-0d0d0d, #0D0D0D);
+    text-shadow: 0px 0px 5px white;
+  }
+
+
+  .present__image {
+    right: -250px;
+    bottom: -600px;
+
+    width: 672px;
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .present {
+    min-height: 1120px;
+  }
+
+  .present__container {
+    margin-top: 10px;
+  }
+
+  .present__pharagraph {
+    width: 320px;
+    line-height: 1.53;
+  }
+
+  .present__image {
+    width: 436px;
+    height: 546px;
+    right: -100px;
+    bottom: -450px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .present {
+    padding: 0 4px;
+    min-height: 913px;
+  }
+
+  .present__image {
+    width: 436px;
+    height: 546px;
+    right: -100px;
+    bottom: -450px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .present {
+    min-height: 870px;
+  }
 }

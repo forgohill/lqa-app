@@ -1,4 +1,6 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+
 import './Main.css';
 
 import Present from '../Present/Present.jsx';
@@ -14,22 +16,32 @@ const Main = () => {
       className='main'
     >
       <Present />
+
       <Skills
         subtitle='приобретенные'
         title='навыки'
       />
+
       <Blog
         subtitle='процессы обучения'
         title='социальный блог'
       />
+
+      {/* 
       <Portfolio
         subtitle='примеры моих работ'
         title='портфолио'
-      />
+      /> */}
+
+      {/* 
       <Feedback
         subtitle='здесь быть может ничего нет, пока...'
         title='отзывы'
-      />
+      /> */}
+
+      <Helmet>
+        <title>lab.quick.action</title>
+      </Helmet>
     </main>
   );
 }
