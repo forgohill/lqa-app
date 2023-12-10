@@ -8,7 +8,7 @@
 
   position: absolute;
 
-  top: 45%;
+  top: 42%;
   left: -100px;
 
   width: 62px;
@@ -37,12 +37,46 @@
   -moz-osx-font-smoothing: grayscale;
 
   cursor: pointer;
-
 }
 
 .profile-prev-arrow:hover::before {
   opacity: .5;
-
   transition: .3s all;
-
 }
+
+@media screen and (max-width: 1280px) {
+  .profile-prev-arrow {
+    top: 45%;
+    left: -85px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile-prev-arrow {
+    left: -80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .profile-prev-arrow {
+    width: 50px;
+    height: 50px;
+    left: -60px;
+  }
+
+  .profile-prev-arrow:before {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-prev-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 350px) {}

@@ -119,6 +119,7 @@
 @media screen and (max-width: 1340px) {
   .blog {
     padding: 0 107px;
+    min-height: 768px;
   }
 
   .blog__wrapper {
@@ -147,6 +148,9 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .blog {
+    min-height: 902px;
+  }
 
   .blog__content {
     width: 400px;
@@ -197,6 +201,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .blog {
+    min-height: 714px;
+  }
+
   .blog__wrapper {
     margin-top: 58px;
   }
@@ -215,6 +223,7 @@
 @media screen and (max-width: 800px) {
   .blog {
     padding: 0 35px;
+    min-height: 1238px;
   }
 }
 

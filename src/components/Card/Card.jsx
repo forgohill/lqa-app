@@ -12,10 +12,13 @@ const Card = ({ card }) => {
       >
         <h3
           className='card__title'
-        >{card.title}</h3>
+        >{card.title} про ководство</h3>
         <p
           className='card__pharegraph'
-        >{card.text}</p>
+        >
+          {/* {card.text} */}
+          {card.text.slice(0, 290)}
+        </p>
         <Link
           className='card__link'
           to=''
@@ -23,6 +26,7 @@ const Card = ({ card }) => {
       </div>
 
       <Link
+        to='/project-1'
         className='card__img-container'
       >
         <img

@@ -5,8 +5,8 @@ import './Main.css';
 
 import Present from '../Present/Present.jsx';
 import Skills from '../Skills/Skills.jsx';
-import Portfolio from '../Portfolio/Portfolio.jsx';
 import Blog from '../Blog/Blog.jsx';
+import Portfolio from '../Portfolio/Portfolio.jsx';
 import Feedback from '../Feedback/Feedback.jsx';
 
 
@@ -27,11 +27,11 @@ const Main = () => {
         title='социальный блог'
       />
 
-      {/* 
+
       <Portfolio
         subtitle='примеры моих работ'
         title='портфолио'
-      /> */}
+      />
 
       {/* 
       <Feedback

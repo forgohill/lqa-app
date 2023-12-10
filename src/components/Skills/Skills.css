@@ -51,6 +51,8 @@
 @media screen and (max-width: 1024px) {
   .skills {
     padding: 0 31px;
+    min-height: 989px;
+
   }
 
   .skills__skillscard {
@@ -65,7 +67,11 @@
   }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
+  .skills {
+    min-height: 1033px;
+  }
+
   .skills__list {
     gap: 60px;
   }
