@@ -7,23 +7,24 @@ import "slick-carousel/slick/slick-theme.css";
 
 import SectionTitle from '../SectionTitle/SectionTitle.jsx';
 import Persona from '../Persona/Persona.jsx';
-import { persons } from '../../utils/persons.js';
+import { persons } from '../../utils/persons_random.js';
 
 
 const Feedback = ({ subtitle, title }) => {
 
-  const renderPersons = persons.map((person) => {
+  const renderPersons = persons.map((person, index) => {
     return <Persona
-      key={person.toString()}
+      key={index.toString()}
       person={person}
+      index={index}
     />
   });
   const settings = {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     appendDots: dots => (
       <div>
         <ul>

@@ -154,6 +154,7 @@
 @media screen and (max-width: 1280px) {
   .portfolio {
     padding: 0 108px;
+    min-height: 770px;
   }
 
   .portfolio__wrapper {
@@ -168,7 +169,7 @@
 @media screen and (max-width: 1024px) {
   .portfolio {
     padding: 0 86px;
-    min-height: 902px;
+    min-height: 976px;
   }
 
   .portfolio__wrapper {
@@ -183,6 +184,7 @@
 @media screen and (max-width: 900px) {
   .portfolio {
     padding: 0 70px;
+    min-height: 785px;
   }
 
   .portfolio__wrapper {
@@ -192,11 +194,14 @@
   .portfolio__slider-container .slick-dots {
     bottom: -40px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   .portfolio {
     padding: 0 25px;
+    min-height: 1382px;
+
   }
 
   .portfolio__wrapper {

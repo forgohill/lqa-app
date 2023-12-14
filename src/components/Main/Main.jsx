@@ -33,11 +33,11 @@ const Main = () => {
         title='портфолио'
       />
 
-      {/* 
+
       <Feedback
         subtitle='здесь быть может ничего нет, пока...'
         title='отзывы'
-      /> */}
+      />
 
       <Helmet>
         <title>lab.quick.action</title>

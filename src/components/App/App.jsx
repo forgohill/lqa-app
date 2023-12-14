@@ -38,7 +38,7 @@ function App() {
         />
       </Routes>
 
-      {/* 
+
       <Routes>
         <Route
           path='/'
@@ -47,7 +47,7 @@ function App() {
             title='контакты'
           />}
         ></Route>
-      </Routes> */}
+      </Routes>
 
     </div>
   );

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   width: 100%;
-  min-height: 510px;
+  min-height: 500px;
 
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
 
   box-sizing: border-box;
   position: absolute;
-  bottom: -60px;
+  bottom: -30px;
 
   width: 100%;
 
@@ -116,3 +116,70 @@
 .feedback__list .slick-dots li:hover {
   opacity: .5;
 }
+
+
+@media screen and (max-width: 1280px) {
+  .feedback {
+    padding: 0 107px;
+    min-height: 495px;
+  }
+
+  .feedback__list {
+    margin-top: 62px;
+  }
+
+  .feedback__list .slick-dots {
+    /* bottom: -62px; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feedback {
+    padding: 0 98px;
+    min-height: 470px;
+  }
+
+  .feedback__list {
+    /* margin-top: 40px; */
+  }
+
+  .feedback__list .slick-dots {
+    bottom: -45px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .feedback {
+    padding: 0 70px;
+  }
+
+  .feedback__list .slick-dots {
+    bottom: -15px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .feedback {
+    padding: 0 20px;
+    min-height: 685px;
+  }
+
+  .feedback__list {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .feedback__list .slick-dots {
+    bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .feedback {
+    padding: 0 4px;
+  }
+}
+
+@media screen and (max-width: 350px) {}

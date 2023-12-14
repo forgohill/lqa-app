@@ -36,11 +36,21 @@ const Persona = ({ person, index }) => {
     if (isContentTwo === 0) {
       setIsContentTwo(randomContentTwo);
     }
-  }, [isIconsOne, isIconsTwo, isContentOne, isContentTwo]);
+  }, [isIconsOne, isIconsTwo, isContentOne]);
+
+  useEffect(() => {
+
+  }, []);
+  // useEffect(() => {
+  //   if (isIconsTwo === 0) {
+  //     setIsIconsTwo(randomIndexTwo);
+  //   }
+  // }, [isIconsTwo]);
+
 
   return (
-    <div className="feedback__item persona">
-      <div className=' persona__wrapper'>
+    <div className="persona">
+      <div className='feedback__item persona persona_type_accent'>
         <div className='persona__img-container'>
           <img
             className='persona__image'
@@ -62,7 +72,7 @@ const Persona = ({ person, index }) => {
           >смотреть...</button>
         </div>
       </div>
-      <div className='persona__wrapper persona__wrapper_type_accent'>
+      <div className='feedback__item persona persona_type_accent'>
         <div className='persona__img-container'>
           <img
             className='persona__image'
