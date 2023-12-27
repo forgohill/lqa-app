@@ -29,7 +29,7 @@ const Footer = ({ subtitle, title }) => {
               target='_blank'
               rel='noreferrer'
               to="tel:+79092876006"
-              className="footer__link">+7 952 778 35 89</Link></p>
+              className="footer__link">+7 909 287 60 06</Link></p>
           </li>
           <li className='footer__item'>
             <Link className="footer__icons-links"
@@ -43,7 +43,7 @@ const Footer = ({ subtitle, title }) => {
               target='_blank'
               rel='noreferrer'
               to="https://wa.me/79092876006?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B"
-              className="footer__link">+7 952 778 35 89</Link></p>
+              className="footer__link">+7 909 287 60 06</Link></p>
           </li>
           <li className='footer__item'>
             <Link className="footer__icons-links"

@@ -25,29 +25,19 @@ const Feedback = ({ subtitle, title }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    appendDots: dots => (
-      <div>
-        <ul>
-          {dots}
-        </ul>
-      </div>
-    ),
-    customPaging: i => (
-      <div></div>
-    ),
+    appendDots: dots => (<div><ul>{dots}</ul></div>),
+    customPaging: i => (<div></div>),
     arrows: false,
   };
 
 
   return (
     <section
-      className='feedback'
-    >
+      className='feedback'>
       <SectionTitle
         subtitle={subtitle}
         title={title}
       />
-
       <article
         className='feedback__list'>
         <Slider {...settings}>

@@ -24,9 +24,8 @@ const Main = () => {
 
       <Blog
         subtitle='процессы обучения'
-        title='социальный блог'
+        title='учебный блог'
       />
-
 
       <Portfolio
         subtitle='примеры моих работ'
@@ -47,16 +46,3 @@ const Main = () => {
 }
 
 export default Main;
-
-/**
-       -Section
-        --Present
-      -Section
-        --Skills
-      -Section
-        --Portfolio
-      -Section
-        --Blog
-      -Section
-        --Feedback
- */

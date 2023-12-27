@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
   .header__title {
     width: 340px;
   }

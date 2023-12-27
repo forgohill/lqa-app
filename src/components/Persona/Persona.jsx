@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Persona.css';
-import { persons, sourcePersons } from '../../utils/persons.js';
 
 const Persona = ({ person, index }) => {
-
   const { image } = person;
   const { content } = person;
   const [isIconsOne, setIsIconsOne] = useState(0);
   const [isIconsTwo, setIsIconsTwo] = useState(0);
-  // const [isContentOne, setIsContentOne] = useState({
-  //   author: '', text: ''
-  // });
-  // const [isIsContentTwo, setIsContentTwo] = useState({
-  //   author: '', text: ''
-  // });
-
   const [isContentOne, setIsContentOne] = useState(0);
   const [isContentTwo, setIsContentTwo] = useState(0)
 
@@ -53,13 +44,13 @@ const Persona = ({ person, index }) => {
           <p
             className='persona__pharagraph'
           >{content[isContentOne].text}</p>
-          <button
+          {/* <button
             className='persona__button'
             onClick={() => {
               console.log(person);
               console.log(index);
             }}
-          >смотреть...</button>
+          >смотреть...</button> */}
         </div>
       </div>
       <div className='persona__wrapper persona__wrapper_type_accent'>
@@ -75,13 +66,13 @@ const Persona = ({ person, index }) => {
           <p
             className='persona__pharagraph'
           >{content[isContentTwo].text}</p>
-          <button
+          {/* <button
             className='persona__button'
             onClick={() => {
               console.log(person);
               console.log(index);
             }}
-          >смотреть...</button>
+          >смотреть...</button> */}
         </div>
       </div>
     </div>

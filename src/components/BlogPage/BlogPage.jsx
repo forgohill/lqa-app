@@ -14,37 +14,48 @@ import BlogPage0005 from '../BlogPages/BlogPage0005/BlogPage0005';
 
 
 const BlogPage = () => {
+
+  const clickUpPage = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <main
+      className='main blog-page'>
+      <SectionTitle
+        subtitle='процессы обучения'
+        title='учебный блог'
+      />
 
-      className='main'>
-      <section>
-        <SectionTitle
-          subtitle='процессы обучения'
-          title='социальный блог'
-        >
-
-        </SectionTitle>
-        <BlogPage0005 />
-        <BlogPage0004 />
-        <BlogPage0003 />
-        <BlogPage0002 />
-        <BlogPage0001 />
-        <ul>
-          <li>
+      {/* <BlogPage0005 /> */}
+      {/* <BlogPage0004 /> */}
+      {/* <BlogPage0003 /> */}
+      {/* <BlogPage0002 /> */}
+      <BlogPage0001 />
+      <footer
+        className='blog-page__footer footer-blogpage'
+      >
+        <ul className='footer-blogpage__list'>
+          <li className='footer-blogpage__item'>
             <Link
+              className='footer-blogpage__link'
               to="">предыдущая страница</Link>
           </li>
-          <li>
+          <li
+            className='footer-blogpage__item'>
             <Link
+              className='footer-blogpage__link'
               to="">следующая страница</Link>
           </li>
-          <li>
+          <li
+            className='footer-blogpage__item'>
             <Link
+              onClick={clickUpPage}
+              className='footer-blogpage__link'
               to="">наверх</Link>
           </li>
         </ul>
-      </section>
+      </footer>
       <Helmet>
         <title>LQA | социальный блог</title>
       </Helmet>

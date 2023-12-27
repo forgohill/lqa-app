@@ -16,9 +16,9 @@ import { sourceCards } from '../../utils/portfolio.js';
 
 const Portfolio = ({ subtitle, title }) => {
 
-  const renderCards = sourceCards.map((card) => {
+  const renderCards = sourceCards.map((card, index) => {
     return <Card
-      key={card.toString()}
+      key={`card-portfolio-${index.toString()}`}
       card={card}
     />
   });
@@ -31,18 +31,8 @@ const Portfolio = ({ subtitle, title }) => {
     slidesToScroll: 1,
     nextArrow: <ProfileNextArrow />,
     prevArrow: <ProfilePrevArrow />,
-    appendDots: dots => (
-      <div>
-        <ul>
-          {dots}
-        </ul>
-      </div>
-    ),
-    customPaging: i => (
-      <p>
-        {i + 1}
-      </p>
-    )
+    appendDots: dots => (<div><ul>{dots}</ul></div>),
+    customPaging: i => (<p>{i + 1}</p>),
   };
 
 
@@ -50,15 +40,10 @@ const Portfolio = ({ subtitle, title }) => {
     <section
       className='portfolio'
     >
-      <Link
-        className='portfolio__link'
-        to='/portfolio-page'
-      >
-        <SectionTitle
-          subtitle={subtitle}
-          title={title}
-        />
-      </Link>
+      <SectionTitle
+        subtitle={subtitle}
+        title={title}
+      />
       <article
         className='portfolio__wrapper'>
         <div

@@ -3,37 +3,46 @@ import { Link } from 'react-router-dom'
 
 import './Card.css';
 
-const Card = ({ card }) => {
+const Card = ({ card, key, index }) => {
+  const {
+    text,
+    title,
+    image,
+    alt,
+    pathname
+  } = card;
+
   return (
     <li className="portfolio__item card">
-
       <div
         className='card__content'
       >
         <h3
           className='card__title'
-        >{card.title} про ководство</h3>
+        >{title}</h3>
         <p
           className='card__pharegraph'
         >
-          {/* {card.text} */}
-          {card.text.slice(0, 290)}
+          {text}
+          {/* {card.text.slice(0, 290)} */}
         </p>
         <Link
           className='card__link'
-          to=''
-        >смотреть...</Link>
+          target='_blank'
+          rel='noreferrer'
+          to={pathname}
+        >смотреть на github.com</Link>
       </div>
 
-      <Link
+      <div
         to='/project-1'
         className='card__img-container'
       >
         <img
           className='card__image'
-          src={card.image}
-          alt={card.alt} />
-      </Link>
+          src={image}
+          alt={alt} />
+      </div>
     </li>
 
   );

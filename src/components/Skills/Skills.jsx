@@ -45,19 +45,19 @@ const Skills = ({ subtitle, title }) => {
             className='skills__item skill-card'>
             <SkillCard
               image={element2}
-              title='web-дизайн'
+              title='разработка'
               skillList={(
                 <>
                   <li
                     className='skill-card__item'
-                  >иследование
+                  >React
                   </li>
                   <li
                     className='skill-card__item'
-                  >прототип</li>
+                  >БЭМ</li>
                   <li
                     className='skill-card__item'
-                  >макет</li>
+                  >FSD</li>
                 </>
               )}
               link='/elem1'
@@ -67,7 +67,7 @@ const Skills = ({ subtitle, title }) => {
             className='skills__item skill-card'>
             <SkillCard
               image={element3}
-              title='исследование'
+              title='оптимизация'
               skillList={(
                 <>
                   <li

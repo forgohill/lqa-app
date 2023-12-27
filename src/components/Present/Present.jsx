@@ -13,7 +13,7 @@ const Present = () => {
         >я Александр Белов</p>
         <p
           className='present__pharagraph'
-        >2022 год - год начала моей работы в IT</p>
+        >2022 год - год начала моей учебы&nbsp;в&nbsp;IT</p>
         <p
           className='present__pharagraph present__pharagraph_type_thin'
         >менять профессию никогда не поздно</p>

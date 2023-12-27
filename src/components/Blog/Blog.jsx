@@ -8,11 +8,17 @@ const Blog = ({ subtitle, title }) => {
     <section
       className='blog'
     >
-      <SectionTitle
-        subtitle={subtitle}
-        title={title}
-      />
+      <Link
+        // className='portfolio__link'
+        className='blog__title-link'
 
+        to='/blog-page/1'
+      >
+        <SectionTitle
+          subtitle={subtitle}
+          title={title}
+        />
+      </Link>
       <article className='blog__wrapper'>
         <div className='blog__img-container'>
           <img className='blog__image'
@@ -20,12 +26,12 @@ const Blog = ({ subtitle, title }) => {
         </div>
         <div className='blog__content'>
           <h3 className="blog__title">
-            Нашел для себя классный ресурс.
+            Типографика в сайте портфолио lab.quick.action на ширине 1440
           </h3>
           <p className="blog__pharagraph">
-            В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта, превозмогая сложившуюся непростую экономическую ситуацию, смешаны с не уникальными данными до степени совершенной неузнаваемости...
+            Текст который содержит правила размещения заголовков, подзаголовков и других елементов типографики, сами правила написаны отчасти не корректно. Но сама верстка поста заключает эти правила. в том числе адаптив.
           </p>
-          <p className="blog__pharagraph blog__pharagraph_accent_light">19.08.2022г</p>
+          <p className="blog__pharagraph blog__pharagraph_accent_light">20.08.2022г</p>
           <Link
             className="blog__link"
             to='/blog-page/1'
