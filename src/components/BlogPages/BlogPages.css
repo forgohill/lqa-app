@@ -254,7 +254,10 @@
   text-decoration: none;
 }
 
-
+.blog-pages__ifarme-video {
+  display: flex;
+  justify-content: center;
+}
 
 
 

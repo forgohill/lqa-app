@@ -1,6 +1,5 @@
 import React from 'react';
 import DividingLine from '../DividingLine/DividingLine.jsx';
-import '../BlogPages.css';
 import './BlogPage0001.css';
 import imgSonetBlogPost1 from "../../../img/blog-pages/BlogPage0001/img-sonet-blog-post1 1.webp";
 import imageContainer1 from "../../../img/blog-pages/BlogPage0001/image-container-1.webp";

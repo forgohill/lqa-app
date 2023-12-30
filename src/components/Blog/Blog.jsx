@@ -26,12 +26,12 @@ const Blog = ({ subtitle, title }) => {
         </div>
         <div className='blog__content'>
           <h3 className="blog__title">
-            Типографика в сайте портфолио lab.quick.action на ширине 1440
+            Первое касание с TypeScript, создание Todolist по видеоуроку
           </h3>
           <p className="blog__pharagraph">
-            Текст который содержит правила размещения заголовков, подзаголовков и других елементов типографики, сами правила написаны отчасти не корректно. Но сама верстка поста заключает эти правила. в том числе адаптив.
+            Повторил небольшой видеоурок по проекту TS + React. Готовый результат разместил на GH-page. Начал изучать TS по книге + формат книжного клуба от Я.Практикум.
           </p>
-          <p className="blog__pharagraph blog__pharagraph_accent_light">20.08.2022г</p>
+          <p className="blog__pharagraph blog__pharagraph_accent_light">28.12.2023г</p>
           <Link
             className="blog__link"
             to='/blog-page/1'

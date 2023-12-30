@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
 import './BlogPage.css';
+import '../BlogPages/BlogPages.css';
 import SectionTitle from '../SectionTitle/SectionTitle';
 
 import BlogPage0001 from '../BlogPages/BlogPage0001/BlogPage0001';
@@ -30,7 +31,7 @@ const BlogPage = () => {
       {/* <BlogPage0005 /> */}
       {/* <BlogPage0004 /> */}
       {/* <BlogPage0003 /> */}
-      {/* <BlogPage0002 /> */}
+      <BlogPage0002 />
       <BlogPage0001 />
       <footer
         className='blog-page__footer footer-blogpage'
